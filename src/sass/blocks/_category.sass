@@ -1,0 +1,108 @@
+.orange 
+    background: #FF4200
+    &_pattern
+        position: absolute
+        width: 100px
+        height: 100px
+        top: 0
+        right: 0 
+        transform: translate(25%, -25%)
+        background: url('../icons/pat3.svg') center center/cover no-repeat
+        opacity: 0.2;
+.category
+    margin-top: 10px
+    .wrapper
+        display: flex 
+        width: 1440px 
+        margin: 0 auto
+        margin-top: 10px
+    &_block
+        display: flex
+        justify-content: space-between
+        width: calc( 100% / 4 )
+        height: 176px 
+        border-radius: 10px
+        overflow: hidden 
+        cursor: pointer
+        &:not(:first-of-type)
+            margin-left: 10px
+            
+        transition: 0.3s all
+
+        &:hover
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+            .category_block_left
+                img
+                    width: 105%
+                    height: auto;
+            .category_block_btn_icon
+                right: -6px
+            .category_block_btn_title
+                &::after
+                    content: ''
+                    width: 100%
+                    height: 2px
+                    background: #fff
+
+        &_left
+            height: 100%
+            width: 50%
+            background: red
+            overflow: hidden
+            border-radius: 10px 30px 30px 10px;
+            img
+                width: 100%
+                height: auto 
+                transition: 0.3s all
+        &_right
+            position: relative
+            box-sizing: border-box
+            height: 100%
+            width: 50%
+            padding: 16px
+        &_title
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px 
+            text-transform: uppercase 
+            color: #FFFFFF;
+            span
+                font-family: Nunito
+                font-style: normal
+                font-weight: 800
+                font-size: 14px
+                line-height: 24px
+                text-transform: uppercase 
+                color: #FFFFFF 
+        &_btn
+            position: absolute
+            display: flex
+            justify-content: space-between
+            align-items: center 
+            width: 144px
+            bottom: 16px
+            font-family: Nunito
+            font-style: normal
+            font-weight: bold
+            font-size: 18px 
+            line-height: 24px 
+            color: #FFFFFF
+            &_title
+                display: flex
+                flex-direction: column
+                &::after
+                    content: ''
+                    width: 0%
+                    height: 2px
+                    background: #fff
+                    transition: 0.3s all
+            &_icon
+                position: absolute
+                right: 0
+                width: 11.17px 
+                height: 15.07px 
+                background: url('../icons/arrow.svg') center center/cover no-repeat
+                transition: 0.3s all
+
